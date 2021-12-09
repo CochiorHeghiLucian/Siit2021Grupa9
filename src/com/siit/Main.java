@@ -77,7 +77,7 @@ public class Main {
 //        "Consumer Super" - If you need a List
 //        to consume T values (you want to write Ts into the list),
 //        you need to declare it with ? super T, e.g. List<? super Integer>. But there are
-//        no guarantees what type of object you may readdsadasdasdasdasdasfdsf from this list.
+//        no guarantees what type of object you may read from this list.
 //        If you need to both read from and write to a list, you need to declare it exactly with no wildcards, e.g. List<Integer>.
 
 //        Example:
