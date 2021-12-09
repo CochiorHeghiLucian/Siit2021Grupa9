@@ -4,6 +4,7 @@ import com.siit.ex1.Box;
 import com.siit.ex1.Pair;
 import com.siit.ex1.SameTypePair;
 import com.siit.ex1.SimplePair;
+import com.siit.ex2.Util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -90,6 +91,12 @@ public class Main {
 //            }
 //        }
 
+        Pair<Integer, String> p1 = new SimplePair<>(1, "apple");
+        Pair<Integer, String> p2 = new SimplePair<>(2, "pear");
+        boolean same = Util.<Integer, String> compare(p1, p2);
+//        boolean same = Util.<String, String> compare(p1, p2); wrong
+        boolean same2 = Util.compare(p1, p2);
+
 
 
 
@@ -100,6 +107,10 @@ public class Main {
         for (Object elem: list){
             System.out.println(elem.toString());
         }
+    }
+
+    public static void swap(List<?> list, int index1, int index2){
+
     }
 
 
